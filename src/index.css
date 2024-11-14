@@ -1,0 +1,196 @@
+/* src/index.css */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+h1, h2 {
+  color: #222;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 4px;
+}
+
+/* src/App.css */
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  max-width: 500px;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+
+/* src/components/WelcomeScreen.css */
+
+.welcome-screen {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.welcome-screen h1 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.welcome-screen button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+}
+
+.welcome-screen button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+
+/* src/components/QuestionCard.css */
+
+.question-card {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.question-card h2 {
+  font-size: 1.4rem;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.question-card input[type="number"],
+.question-card textarea {
+  width: 80%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.question-card input[type="number"] {
+  max-width: 80px;
+  text-align: center;
+}
+
+.question-card textarea {
+  resize: none;
+  height: 80px;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.navigation-buttons button {
+  flex: 1;
+  padding: 10px;
+  font-size: 1rem;
+  color: white;
+  background-color: #007bff;
+}
+
+.navigation-buttons button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+
+/* src/components/ProgressIndicator.css */
+
+.progress-indicator {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+
+/* src/components/ConfirmDialog.css */
+
+.confirm-dialog {
+  text-align: center;
+  padding: 20px;
+}
+
+.confirm-dialog p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.confirm-dialog button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 15px;
+  margin: 0 10px;
+  font-size: 1rem;
+}
+
+.confirm-dialog button:first-child {
+  background-color: #28a745;
+}
+
+.confirm-dialog button:last-child {
+  background-color: #dc3545;
+}
+
+.confirm-dialog button:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+/* src/components/ThankYouScreen.css */
+
+.thank-you-screen {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.thank-you-screen h1 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.thank-you-screen p {
+  font-size: 1rem;
+  color: #666;
+}
+
+button {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
